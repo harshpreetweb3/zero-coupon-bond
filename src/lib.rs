@@ -199,5 +199,18 @@ mod zerocouponbond {
 
 
 // idea
-// instead of the IED and MD, we can take maturity_period such as 3M/90D, then after 3M/90D, amount will be repaid ...
+// 1. instead of the IED and MD, we can take maturity_period such as 3M/90D, then after 3M/90D, amount will be repaid ...
+
+// 2. Zero Coupon Contract with an owner 
+
+// bond creator can set_bond_price post issuing/instantiating a contract but here it is on him to decide the face value of bond
+// I believe bond price must be dependent on multiple factors so what those factors are, how can I/an investor dynamically see changes in the bond prices . . . 
+
+// owner would be able to withdraw the earning he earned post selling the bonds
+// but he would have to dispense the earning back to the contract before the maturity date
+
+// 3. ReMint more bonds
+
+// there would be function to check how many bonds are remaining in the contract
+// contract owner will mint more bonds if wants to increase up the no_of_zero_coupon_bonds
 
